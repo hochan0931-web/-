@@ -541,14 +541,14 @@ const Benefits = ({ content, setContent, isEditing }: any) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="p-10 border border-white/5 rounded-3xl bg-white/[0.02] backdrop-blur-sm hover:bg-white/[0.05] transition-all group"
+              className="p-10 border border-white/5 rounded-3xl bg-white/[0.02] backdrop-blur-sm hover:bg-white/[0.05] transition-all group flex flex-col items-center text-center"
             >
               <div className="w-12 h-12 rounded-full border border-[var(--c-accent)]/30 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
                 <CheckCircle className="text-[var(--c-accent)]" size={20} strokeWidth={1.5} />
               </div>
               <EditableText id={b.titleId} content={content} setContent={setContent} isEditing={isEditing} tag="h4" className="text-xl font-display font-bold mb-3 italic" />
               <EditableText id={b.descId} content={content} setContent={setContent} isEditing={isEditing} tag="p" className="text-[var(--c-bg)]/50 text-base mb-8 font-light leading-relaxed" />
-              <div className="h-px w-12 bg-white/10 mb-8" />
+              <div className="h-px w-12 bg-white/10 mb-8 mx-auto" />
               <EditableText id={b.valId} content={content} setContent={setContent} isEditing={isEditing} tag="div" className="text-4xl font-display font-light text-[var(--c-accent)] italic" />
             </motion.div>
           ))}
@@ -845,7 +845,7 @@ const Final = ({ content, setContent, isEditing }: any) => {
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-block px-12 md:px-20 py-6 md:py-10 bg-[var(--c-dark)] text-white text-lg md:text-2xl uppercase tracking-[0.4em] font-bold rounded-full hover:bg-[var(--c-accent)] transition-colors shadow-2xl"
+          className="inline-block px-16 py-8 bg-[var(--c-dark)] text-white text-xs uppercase tracking-[0.4em] font-bold rounded-full hover:bg-[var(--c-accent)] transition-colors shadow-2xl"
         >
           <EditableText id="footerCta" content={content} setContent={setContent} isEditing={isEditing} tag="span" />
         </motion.a>
