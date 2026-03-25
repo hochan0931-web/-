@@ -845,7 +845,7 @@ const Final = ({ content, setContent, isEditing }: any) => {
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-block px-12 md:px-20 py-6 md:py-10 bg-[var(--c-dark)] text-white text-lg md:text-2xl uppercase tracking-[0.4em] font-bold rounded-full hover:bg-[var(--c-accent)] transition-colors shadow-2xl"
+          className="inline-block px-16 py-8 bg-[var(--c-dark)] text-white text-xs uppercase tracking-[0.4em] font-bold rounded-full hover:bg-[var(--c-accent)] transition-colors shadow-2xl"
         >
           <EditableText id="footerCta" content={content} setContent={setContent} isEditing={isEditing} tag="span" />
         </motion.a>
